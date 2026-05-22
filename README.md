@@ -187,7 +187,7 @@ cyberaml-shield/
 
 ## 🌐 Live Demo
 
-🔗 **[Live App on Streamlit Cloud](https://your-app.streamlit.app)** *(update with your URL)*
+🔗 | https://camlshield.streamlit.app/ |
 
 ---
 

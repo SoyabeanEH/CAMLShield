@@ -99,7 +99,7 @@ init_db()
 # ── Gemini AI ──────────────────────────────────────────────────────────────────
 try:
     import google.generativeai as genai
-    GEMINI_API_KEY = "AIzaSyDOIk8ugi5EvvprXMAYjFUMqhdt4gFWvNg"
+    GEMINI_API_KEY = "AIzaSyBe5bEY0cGh0a-5vp2uZ7T1POv_9lVY48g"
     genai.configure(api_key=GEMINI_API_KEY)
     gemini_model = genai.GenerativeModel("gemini-2.5-flash")
     GEMINI_AVAILABLE = True
@@ -110,10 +110,10 @@ except Exception as _e:
     gemini_model = None
 
 # ── Neo4j ──────────────────────────────────────────────────────────────────────
-NEO4J_URI      = "neo4j+s://c899d0d7.databases.neo4j.io"
-NEO4J_USER     = "c899d0d7"
-NEO4J_PASSWORD = "K0o9JInbogPIuFpBvx2SUVC19OWfW4BzH-yr3uTudn4"
-NEO4J_DATABASE = "c899d0d7"
+NEO4J_URI      = "neo4j+s://5e497252.databases.neo4j.io"
+NEO4J_USER     = "5e497252"
+NEO4J_PASSWORD = "qHo0R-Tx8ComT-7IwE9nQw1YV9C5lA-P-_EUAyzAzBE"
+NEO4J_DATABASE = "5e497252"
 
 def get_neo4j_driver():
     try:

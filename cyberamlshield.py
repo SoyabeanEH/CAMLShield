@@ -6,6 +6,7 @@ import json
 import sqlite3
 import io
 import csv
+import os
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -95,6 +96,10 @@ def db_stats():
             "top_ip":top_ip[0] if top_ip else "—"}
 
 init_db()
+
+st.write("Working directory:", os.getcwd())
+st.write("Database path:", DB_PATH.resolve())
+st.write("Database exists:", DB_PATH.exists())
 
 # ── Gemini AI ──────────────────────────────────────────────────────────────────
 try:
